@@ -1,0 +1,302 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Abtin Bateni}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {algorithms, cv, front-end},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage[super]{nth}
+\usepackage{fontawesome}
+\usepackage{enumitem,color}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+\titleformat*{\subsection}{\small}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.95\linewidth}
+    \begin{tabular}{ll}
+         Email:  \href{mailto:abtinbateni@gmail.com}{\tt abtinbateni@gmail.com}
+        & Phone: (+98) 912 287 43 68 \\
+         LinkedIn:  \href{http://www.linkedin.com/in/abtin-bateni/}{\tt abtin-bateni}
+        & Github: \href{http://www.github.com/mr-bat/}{\tt mr-bat} \\
+    \end{tabular}
+\end{minipage}
+
+
+\section*{Personal}
+\begin{itemize}
+\item \hspace{10pt} Whenever I think of it, I consider myself very lucky to be born in the modern era of computers and artificial intelligence. I became interested in computers since I was very young and I hope to make my future out of it. Not only I have work experience as a front-end developer but also I have always found myself interested in the deeper topics of computer science as well as sometimes topics of psychology and management.
+\end{itemize}
+
+\section*{Area of Interest}
+\begin{tabular}{l l}
+    Network Security\hspace*{20pt} & Neural Networks \\
+    Test1 & Test2
+\end{tabular}
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.S. Software Engineering, University of Tehran, 08/2015 - Present.
+    \begin{itemize}
+        \item{Current GPA: 3.49 out of 4 - 16.75 out of 20}
+    \end{itemize}
+\end{itemize}
+
+\section*{Employment}
+
+\begin{itemize}
+
+\item \textbf{Front-End Developer} at \href{https://herminatech.com}{\tt HerminaTech}{\ \scriptsize 06/2018 - Present}
+    \begin{description}[style=nextline,before=\footnotesize]
+        {\hspace*{10pt}HerminaTech is a growing tech startup that looks forward to becoming the next widespread PMS(Property management system) in hotels around the globe.}
+    \end{description}
+    \begin{description}[style=nextline,before=\normalsize,noitemsep,topsep=0pt]
+        \item{\hspace*{8pt} \faCaretRight \hspace*{4pt}React.js developer responsible for front-end development of the software. For a short period, I was also responsible for holding Scrum meetings and integrating Scrum with the company.}
+    \end{description}
+
+\item \textbf{ACM-ICPC Teacher} at Summer classes of ACM Chapter{\ \scriptsize 06/2017 - 09/2017}
+    \begin{description}[style=nextline,before=\footnotesize]
+        {\hspace*{10pt}ACM Chapter regularly holds summer classes in diverse fields in order to make students familiar with topics that they may not encounter during their degree program or their encounter may be from a different point of view.}
+    \end{description}
+    \begin{description}[style=nextline,before=\normalsize,noitemsep,topsep=0pt]
+        \item{\hspace*{8pt} \faCaretRight \hspace*{4pt}In the period of summer break our team (which advanced to the World Finals) was responsible for this class. We aimed to prepare our students as much as we could for the upcoming Regional ICPC Contest in late December.}
+    \end{description}
+
+\item \textbf{React Native Application Developer} at \href{https://chibaki.co}{\tt Chibaki}{\ \scriptsize 06/2017 - 09/2017}
+    \begin{description}[style=nextline,before=\footnotesize]
+        {\hspace*{10pt}React-Native Application Developer for both iOS and Android}
+    \end{description}
+    \begin{description}[style=nextline,before=\normalsize,noitemsep,topsep=0pt]
+        \item{\hspace*{8pt} \faCaretRight \hspace*{4pt}Mainly responsible application development. I introduced the company with React Native and its hybrid characteristic.}
+    \end{description}
+
+\item \textbf{Software Engineer Intern} at Rahnema College{\ \scriptsize 12/2016 - 02/2017}
+    \begin{description}[style=nextline,before=\footnotesize]
+        {\hspace*{10pt}At Rahnema, we were grouped to teams and challenged ourselves to build a micro startup while learning the essential skills.}
+    \end{description}
+\end{itemize}
+
+\section*{Honors and Awards}
+\begin{itemize}
+    \item 2017 \hspace*{10pt} \textbf{Ranked \nth{3}}\\
+        \hspace*{30pt}
+        \begin{small}
+            \nth{19} ACM-ICPC Regional Contest, Sharif University of Technology
+        \end{small}
+    \item 2017 \hspace*{10pt} \textbf{Ranked \nth{56}} \hspace*{80pt}\includegraphics[height=0.45cm]{ICPCWF17}\\
+        \hspace*{30pt}
+        \begin{small}
+            \href{http://icpc.baylor.edu/worldfinals/results}{ACM-ICPC World Finals 2017}
+        \end{small}
+    \item 2016 \hspace*{10pt} \textbf{Ranked \nth{5}}\ (Qualified for World Finals 2017)\\
+        \hspace*{30pt}
+        \begin{small}
+            \nth{18} ACM-ICPC Regional Contest, Sharif University of Technology
+        \end{small}
+    \item 2015 \hspace*{10pt} \textbf{Ranked \nth{13}}\\
+        \hspace*{30pt}
+        \begin{small}
+            \nth{17} ACM-ICPC Regional Contest, Sharif University of Technology
+        \end{small}
+    \item 2014 \hspace*{10pt} \textbf{Silver Medal}\hspace*{80pt}\includegraphics[height=0.3cm]{APIO14}\\
+        \hspace*{30pt}
+        \begin{small}
+            \href{http://apio-olympiad.org/2014/apio2014_official_results.pdf}{Asia-Pacific Informatics Olympiad}
+        \end{small}
+    \item 2014 \hspace*{10pt} \textbf{Silver Medal}\\
+        \hspace*{30pt}
+        \begin{small}
+            \nth{24} Iranian National Olympiad in Informatics, Tehran, Iran
+        \end{small}
+    \item 2013 \hspace*{10pt} \textbf{Bronze Medal}\\
+        \hspace*{30pt}
+        \begin{small}
+            \nth{23} Iranian National Olympiad in Informatics, Tehran, Iran
+        \end{small}
+\end{itemize}
+
+\section*{Teaching Experience}
+\begin{itemize}
+    \item \hspace*{10pt} \textbf{ACM-ICPC Teacher} {\ \footnotesize 06/2017 - 09/2017}\\
+        \hspace*{30pt}
+        \begin{small}
+            (Detailed in Employment section)
+        \end{small}
+    \item \hspace*{10pt} Teaching assistant of \textbf{Engineering Probability and Statistics}\\
+        \hspace*{30pt}
+        \begin{tabular}{l r}
+            Under supervision of Dr.Bahrak\hspace*{230pt} & {Fall 2018} \\
+        \end{tabular}
+    \item \hspace*{10pt} Teaching assistant of \textbf{Advanced Programming}\\
+        \hspace*{30pt}
+        \begin{tabular}{l r}
+            Under supervision of Dr.Khosravi\hspace*{210pt} & {Spring 2018} \\
+            Under supervision of Dr.Khosravi\hspace*{210pt} & {Fall 2017} \\
+        \end{tabular}
+    \item \hspace*{10pt} Teaching assistant of \textbf{Design and Analysis of Algorithms}\\
+        \hspace*{30pt}
+        \begin{tabular}{l r}
+            Under supervision of Dr.Mahini\hspace*{220pt} & {Spring 2018} \\
+        \end{tabular}
+    \item \hspace*{10pt} Teaching assistant of \textbf{Data Structure and Algorithm}\\
+        \hspace*{30pt}
+        \begin{tabular}{l r}
+            Under supervision of Dr.Faili\hspace*{220pt} & {Fall 2017} \\
+            Under supervision of Dr.Faghih\hspace*{220pt} & {Spring 2017} \\
+        \end{tabular}
+\end{itemize}
+
+\section*{Volunteer Activities}
+\begin{itemize}
+    \item \begin{samepage}\hspace*{10pt} Mentor at \textbf{SoC (Summer of Code)}
+            \begin{description}[style=nextline,noitemsep,topsep=0pt]
+                \item {\hspace*{10pt} In SoC, we have this dream to inspire and support junior developers and provide them with the required knowledge to be able to build their software project.}
+            \end{description}
+        \end{samepage}
+    \item \begin{samepage} \hspace*{10pt} \textbf{Director of the \nth{4} Panjere}
+            \begin{description}[style=nextline,noitemsep,topsep=0pt]
+                \item {\hspace*{10pt} The Panjere is the most prestigious event among the events of the ACM Student Chapter. Upon completing college, one faces numerous possible paths that he is to choose from. And each has its own pros and cons originating a distinct person. In Panjere, we invite successful people and ask them to talk about the path they have taken and make a more clear point of view for us, the students, toward making a more suitable career path.}
+            \end{description}
+        \end{samepage}
+    \item \begin{samepage}\hspace*{10pt} Member of problem setting committee of \textbf{The Maze}
+            \begin{description}[style=nextline,noitemsep,topsep=0pt]
+                \item {\hspace*{10pt} A freshman-only contest inspired by the MIT Mystery Hunt.}
+            \end{description}
+        \end{samepage}
+    \item \begin{samepage} \hspace*{10pt} Project Editor of \textbf{F1}
+            \begin{description}[style=nextline,noitemsep,topsep=0pt]
+                \item {\hspace*{10pt} F1 is the scientific quarterly magazine of the ACM Student Chapter of The University of Tehran.}
+            \end{description}
+        \end{samepage}
+    \item \begin{samepage} \hspace*{10pt} Back-End Developer at \textbf{D.M.C.}
+            \begin{description}[style=nextline,noitemsep,topsep=0pt]
+                \item {\hspace*{10pt} University of Tehran ACM Student Chapter's Discrete Mathematics Contest.}
+            \end{description}
+        \end{samepage}
+\end{itemize}
+
+\section*{Language Skills}
+    \begin{itemize}
+        \item Persian: Native
+        \item English: Full Professional Proficiency
+            \begin{itemize}
+                \item TOEFL iBT 102 - Reading 25, Listening 27, Speaking ,23, Writing 27
+                \item GRE Verbal: 144 (23\%) Quantitative: 167 (97\%) Analytical: 3.5 (41\%)
+
+            \end{itemize}
+    \end{itemize}
+
+\section*{Technical Skills}
+    \begin{itemize}
+        \item \textbf{Theoretical Background}
+            \begin{itemize}
+                \item Advanced in Data Structures and Design of Algorithms
+                \item Advanced in Graph Theory and Combinatorics
+            \end{itemize}
+        \item \textbf{Programming and Technologies}
+            \begin{itemize}
+                \item Advanced in JavaScript specially React.js + Redux
+                \item Skilled in C++, Node.js, Python, Bash Scripting
+            \end{itemize}
+    \end{itemize}
+\section*{Hobbies and Other Interests}
+    \begin{itemize}
+        \item Basketball
+        \item Listening to a Variety of Podcasts
+        \item Socializing
+        \item Watching Ted Talks
+        \item Listening to Music
+    \end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
